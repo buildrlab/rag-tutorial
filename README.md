@@ -4,6 +4,32 @@ A visual tutorial and runnable RAG starter by BuildrLab. Learn the pipeline by i
 
 **Start without a key or GPU.** The default lab uses a real Qdrant vector database, signed lexical feature hashing and BM25. It returns quoted evidence, not a simulated LLM answer. The optional local-model configuration adds real semantic embeddings and generated answers with Ollama.
 
+## See the guide
+
+### Follow the complete pipeline
+
+![BuildrLab RAG Field Guide: guided lessons and the document-to-answer pipeline](docs/screenshots/overview.jpg)
+
+### Inspect chunk boundaries on the source PDF
+
+![Colour-coded PDF regions alongside the exact text chunks produced by section-aware splitting](docs/screenshots/pdf-chunking.jpg)
+
+### Inspect retrieved evidence
+
+![The offline retrieval workbench showing quoted source passages and retrieval metrics](docs/screenshots/retrieval.jpg)
+
+Screenshots show the running application using fictional Northstar documents. The default mode quotes retrieved evidence; it does not pretend to generate an AI answer.
+
+## What this project demonstrates
+
+- **AI discovery and architecture:** an inspectable path from source documents to retrieval, context and answers, with the limitations explained.
+- **Document engineering:** digital PDFs, scanned-page OCR, provenance and three runnable chunking strategies.
+- **Retrieval engineering:** Qdrant, BM25, vector search, reciprocal rank fusion, example audience filters and context budgets.
+- **Local and hosted inference:** model-free teaching vectors, an Ollama adapter and an OpenAI adapter with server-side credentials.
+- **Delivery quality:** Docker Compose, automated checks, a reproducible evaluation fixture and explicit migration/production guidance.
+
+This is an independent educational portfolio project, not a client production deployment. The small synthetic evaluation is not a claim of general answer accuracy. See the [validation record](docs/validation.md) for tested paths, observed failures and remaining limitations.
+
 ## Quickstart
 
 1. Install and start Docker Desktop (macOS/Windows) or Docker Engine + Compose v2 (Linux).
