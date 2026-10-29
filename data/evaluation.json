@@ -1,0 +1,20 @@
+[
+ {"question":"How long do I have to return unopened equipment?","expected":"returns","split":"dev"},
+ {"question":"How long does a refund take?","expected":"returns","split":"dev"},
+ {"question":"Can custom engraved equipment be returned?","expected":"returns","split":"test"},
+ {"question":"How many days does express delivery take?","expected":"shipping","split":"dev"},
+ {"question":"When should I contact support about tracking?","expected":"shipping","split":"test"},
+ {"question":"How long is the limited warranty?","expected":"warranty","split":"dev"},
+ {"question":"Does the warranty cover water immersion?","expected":"warranty","split":"test"},
+ {"question":"What should I do with a swollen battery?","expected":"warranty","split":"test"},
+ {"question":"What is the Trail 400 battery runtime?","expected":"specs","split":"dev"},
+ {"question":"How much does the Trail 200 weigh?","expected":"specs","split":"test"},
+ {"question":"When does a password reset link expire?","expected":"accounts","split":"dev"},
+ {"question":"What can I use if I lose my authenticator phone?","expected":"accounts","split":"test"},
+ {"question":"Does cancellation refund the current billing period?","expected":"subscription","split":"dev"},
+ {"question":"When is the annual renewal reminder sent?","expected":"subscription","split":"test"},
+ {"question":"When are support ticket attachments deleted?","expected":"retention","split":"dev"},
+ {"question":"How do we distinguish current guidance from old copies?","expected":"retention","split":"test"},
+ {"question":"Who won the lunar cheese championship?","expected":null,"split":"test"},
+ {"question":"What is the internal staging environment identifier?","expected":null,"split":"test"}
+]

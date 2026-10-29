@@ -1,0 +1,30 @@
+# Explicit opt-in: downloads model weights, then uses CPU inference by default.
+services:
+  app:
+    environment:
+      RAG_PROVIDER: ollama
+      EMBEDDING_MODEL: nomic-embed-text
+      GENERATION_MODEL: qwen2.5:1.5b
+    depends_on:
+      model-init:
+        condition: service_completed_successfully
+  ollama:
+    image: ollama/ollama:0.12.6
+    volumes:
+      - models:/root/.ollama
+    healthcheck:
+      test: ["CMD", "ollama", "list"]
+      interval: 5s
+      timeout: 5s
+      retries: 30
+  model-init:
+    image: ollama/ollama:0.12.6
+    environment:
+      OLLAMA_HOST: http://ollama:11434
+    entrypoint: ["/bin/sh", "-c"]
+    command: ["ollama pull nomic-embed-text && ollama pull qwen2.5:1.5b"]
+    depends_on:
+      ollama:
+        condition: service_healthy
+volumes:
+  models:

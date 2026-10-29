@@ -1,0 +1,20 @@
+/* BuildrLab's public visual language: warm cream, ink, violet and rounded controls. */
+:root{--paper:#fffdf8;--ink:#171714;--muted:#686561;--line:#e6e1d9;--green:#7c3aed;--light:#f1eafd;--lime:#e9d8ff;--orange:#7c3aed;--shadow:0 14px 35px #3120450a}
+body{font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+h1{font-family:inherit;font-weight:600;letter-spacing:-2.8px;line-height:1.07}
+h2{letter-spacing:-.8px}h3{letter-spacing:-.3px}
+#sidebar{background:#faf8f3}.brand{display:flex;align-items:flex-start;flex-direction:column;gap:10px}.brand img{width:190px;height:auto}.brand small{margin-left:38px;color:#776b88;letter-spacing:2px;font-size:9px}
+header{background:#fffdf8ec}.breadcrumb{color:#827a88}
+.search-label{background:#fffdf9;border-color:#e4ddd3;border-radius:10px;margin-top:25px}
+.nav-item{color:#635c68;border-radius:9px}.nav-item .num{color:#93859f}.nav-item.active{background:#7c3aed;color:#fff}.nav-item.active .num{color:#efe4ff}.nav-item:hover:not(.active){background:#eee7f5}.nav-item .check{color:#8b5ac1}.nav-section{color:#8b8193}
+.hero-grid{border:1px solid #e5daed;border-radius:28px;padding:32px;background:radial-gradient(ellipse at 100% 15%,#e9dcff80,transparent 60%),linear-gradient(130deg,#fffdf8,#faf6ff);gap:30px}
+.hero-grid h1{font-size:clamp(34px,3.7vw,56px)}.hero-grid .lead,.lead{color:#6b656f}.eyebrow{color:#7c3aed;letter-spacing:1.6px}
+.button,button.primary{border-radius:999px;background:#7c3aed;border-color:#7c3aed}.button:hover,button.primary:hover{background:#6930cf}
+.button.secondary,button.secondary{border-radius:999px;color:#29232e;background:#fffdf8;border-color:#d9d0dc}
+.system-map{background-color:#f2ecfb;background-image:radial-gradient(#cfc0df .8px,transparent .8px);border-color:#e3d6ef;border-radius:20px}
+.flow-node{border-color:#dfd4e9;background:#fffdfd;box-shadow:0 4px 0 #e2d6ee;border-radius:10px}.flow-node.accent{background:#7c3aed;border-color:#7c3aed;box-shadow:0 4px 0 #c8a6ee}.flow-node.accent small{color:#eadcff}.flow-arrow{color:#9861d4}.map-result{border-color:#e5d9ef;border-radius:12px}.map-caption{color:#84728f}
+.start-strip{border-radius:18px;background:#fffdfa}.inline-command{background:#f4eefb;border-color:#e4d9ed;border-radius:9px}.card{border-radius:18px}.card:hover{border-color:#b19acb}.card p,.muted,.prose p,.prose li{color:#665f6b}
+.note{background:#f4eefb;border-color:#9b6bcf;border-radius:0 10px 10px 0}.note.warning{background:#fff5e9;border-color:#bd8141}.lab{border-radius:18px}.lab-head{background:#f5f0fa}.metric{background:#faf7fe;border-color:#e5dbed;border-radius:10px}.metric strong{font-family:inherit;font-weight:600}.answer{border-color:#8c50cf;background:#f6f0fc}.evidence-card{background:#fcfaff;border-radius:10px;border-color:#e8dfef}
+.code{background:#241e30;border-radius:12px}.code-label{background:#1d1728;color:#bdb0cb}.copy{border-color:#695677;color:#ece0f9}code{background:#f0e9f8}.quiz{background:#f7f1fc;border-color:#e6d9ef;border-radius:15px}.quiz button{border-radius:9px}.complete{border-radius:999px;background:#f3eafd}.vector-display{background:#f5effc;border-color:#e3d5ef;border-radius:10px}.bar-track{background:#e8dcf3}.bar-fill{background:#9761cc}.table-wrap{border-radius:12px}th{background:#f4eefb}.migration-stages span{background:#f0e8f7}.migration-stages .current{background:#7c3aed}.pill.green{background:#f0e6fc;color:#7130bf}.pdf-view{background:#eee9f1;border-color:#e1d6e8;border-radius:10px}details{border-radius:10px}.example-questions button:hover{background:#f5eefa}
+@media(max-width:1150px){.hero-grid{padding:24px;grid-template-columns:1fr}.hero-grid h1{font-size:46px}.hero-grid .lead{max-width:650px}.system-map{max-width:none;min-height:285px}.flow-row{margin:16px 0}}
+@media(max-width:680px){.hero-grid{padding:23px 18px;border-radius:22px;gap:22px}.hero-grid h1{font-size:36px;letter-spacing:-1.8px}.lesson-head h1{letter-spacing:-1.8px}.hero-grid .actions{gap:10px}.hero-grid .button{padding:10px 14px;font-size:12px}.hero-meta{gap:9px}.brand img{width:190px}.system-map{padding:16px}.header-link{color:#6d2cca}}

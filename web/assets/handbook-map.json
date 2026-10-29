@@ -1,0 +1,1041 @@
+{
+  "text": "# Returns and refunds\nUnopened equipment can be returned within 30 days of delivery. A receipt or order number is required. Opened equipment is eligible only if it is faulty. Refunds use the original payment method and take 5 to 10 business days after inspection.\n\n# Exceptions\nCustom engraved equipment cannot be returned unless faulty. Subscription renewals are covered by a separate cancellation policy. Contact support before shipping a battery because transport restrictions apply.\n\n# Delivery\nStandard delivery takes 3 to 5 business days. Express delivery takes 1 to 2 business days. Delivery estimates start after dispatch, not when an order is placed. A tracking email is sent when the package leaves the warehouse.\n\n# Warranty\nThe Trail 200 and Trail 400 have a two-year limited warranty against manufacturing defects. Proof of purchase is required. Accidental damage, water immersion and ordinary wear are excluded. Replacement parts retain the original warranty end date.",
+  "words": [
+    {
+      "index": 1,
+      "x": 48,
+      "y": 164,
+      "width": 52.89,
+      "height": 15
+    },
+    {
+      "index": 2,
+      "x": 104.78,
+      "y": 164,
+      "width": 24.89,
+      "height": 15
+    },
+    {
+      "index": 3,
+      "x": 133.57,
+      "y": 164,
+      "width": 51.34,
+      "height": 15
+    },
+    {
+      "index": 4,
+      "x": 48,
+      "y": 194,
+      "width": 50.75,
+      "height": 12
+    },
+    {
+      "index": 5,
+      "x": 101.81,
+      "y": 194,
+      "width": 51.36,
+      "height": 12
+    },
+    {
+      "index": 6,
+      "x": 156.23,
+      "y": 194,
+      "width": 17.73,
+      "height": 12
+    },
+    {
+      "index": 7,
+      "x": 177.02,
+      "y": 194,
+      "width": 12.23,
+      "height": 12
+    },
+    {
+      "index": 8,
+      "x": 192.31,
+      "y": 194,
+      "width": 40.96,
+      "height": 12
+    },
+    {
+      "index": 9,
+      "x": 236.33,
+      "y": 194,
+      "width": 28.12,
+      "height": 12
+    },
+    {
+      "index": 10,
+      "x": 267.5,
+      "y": 194,
+      "width": 12.23,
+      "height": 12
+    },
+    {
+      "index": 11,
+      "x": 282.8,
+      "y": 194,
+      "width": 23.23,
+      "height": 12
+    },
+    {
+      "index": 12,
+      "x": 309.09,
+      "y": 194,
+      "width": 9.17,
+      "height": 12
+    },
+    {
+      "index": 13,
+      "x": 321.32,
+      "y": 194,
+      "width": 40.95,
+      "height": 12
+    },
+    {
+      "index": 14,
+      "x": 365.33,
+      "y": 194,
+      "width": 7.34,
+      "height": 12
+    },
+    {
+      "index": 15,
+      "x": 375.72,
+      "y": 194,
+      "width": 33.01,
+      "height": 12
+    },
+    {
+      "index": 16,
+      "x": 411.79,
+      "y": 194,
+      "width": 9.78,
+      "height": 12
+    },
+    {
+      "index": 17,
+      "x": 424.63,
+      "y": 194,
+      "width": 25.67,
+      "height": 12
+    },
+    {
+      "index": 18,
+      "x": 453.36,
+      "y": 194,
+      "width": 37.29,
+      "height": 12
+    },
+    {
+      "index": 19,
+      "x": 493.71,
+      "y": 194,
+      "width": 7.94,
+      "height": 12
+    },
+    {
+      "index": 20,
+      "x": 48,
+      "y": 212,
+      "width": 43.41,
+      "height": 12
+    },
+    {
+      "index": 21,
+      "x": 94.46,
+      "y": 212,
+      "width": 39.14,
+      "height": 12
+    },
+    {
+      "index": 22,
+      "x": 136.66,
+      "y": 212,
+      "width": 51.36,
+      "height": 12
+    },
+    {
+      "index": 23,
+      "x": 191.08,
+      "y": 212,
+      "width": 7.94,
+      "height": 12
+    },
+    {
+      "index": 24,
+      "x": 202.08,
+      "y": 212,
+      "width": 34.23,
+      "height": 12
+    },
+    {
+      "index": 25,
+      "x": 239.37,
+      "y": 212,
+      "width": 20.17,
+      "height": 12
+    },
+    {
+      "index": 26,
+      "x": 262.6,
+      "y": 212,
+      "width": 5.5,
+      "height": 12
+    },
+    {
+      "index": 27,
+      "x": 271.16,
+      "y": 212,
+      "width": 5.5,
+      "height": 12
+    },
+    {
+      "index": 28,
+      "x": 279.71,
+      "y": 212,
+      "width": 7.94,
+      "height": 12
+    },
+    {
+      "index": 29,
+      "x": 290.71,
+      "y": 212,
+      "width": 29.35,
+      "height": 12
+    },
+    {
+      "index": 30,
+      "x": 323.12,
+      "y": 212,
+      "width": 40.96,
+      "height": 12
+    },
+    {
+      "index": 31,
+      "x": 367.14,
+      "y": 212,
+      "width": 17.73,
+      "height": 12
+    },
+    {
+      "index": 32,
+      "x": 387.93,
+      "y": 212,
+      "width": 15.29,
+      "height": 12
+    },
+    {
+      "index": 33,
+      "x": 406.28,
+      "y": 212,
+      "width": 35.45,
+      "height": 12
+    },
+    {
+      "index": 34,
+      "x": 444.79,
+      "y": 212,
+      "width": 42.19,
+      "height": 12
+    },
+    {
+      "index": 35,
+      "x": 490.04,
+      "y": 212,
+      "width": 36.69,
+      "height": 12
+    },
+    {
+      "index": 36,
+      "x": 48,
+      "y": 230,
+      "width": 18.35,
+      "height": 12
+    },
+    {
+      "index": 37,
+      "x": 69.41,
+      "y": 230,
+      "width": 20.79,
+      "height": 12
+    },
+    {
+      "index": 38,
+      "x": 93.25,
+      "y": 230,
+      "width": 6.12,
+      "height": 12
+    },
+    {
+      "index": 39,
+      "x": 102.43,
+      "y": 230,
+      "width": 9.17,
+      "height": 12
+    },
+    {
+      "index": 40,
+      "x": 114.66,
+      "y": 230,
+      "width": 12.23,
+      "height": 12
+    },
+    {
+      "index": 41,
+      "x": 129.95,
+      "y": 230,
+      "width": 43.41,
+      "height": 12
+    },
+    {
+      "index": 42,
+      "x": 176.41,
+      "y": 230,
+      "width": 23.23,
+      "height": 12
+    },
+    {
+      "index": 43,
+      "x": 202.7,
+      "y": 230,
+      "width": 22.01,
+      "height": 12
+    },
+    {
+      "index": 44,
+      "x": 227.77,
+      "y": 230,
+      "width": 52.58,
+      "height": 12
+    },
+    {
+      "index": 46,
+      "x": 48,
+      "y": 274,
+      "width": 74.69,
+      "height": 15
+    },
+    {
+      "index": 47,
+      "x": 48,
+      "y": 304,
+      "width": 37.9,
+      "height": 12
+    },
+    {
+      "index": 48,
+      "x": 88.95,
+      "y": 304,
+      "width": 45.86,
+      "height": 12
+    },
+    {
+      "index": 49,
+      "x": 137.87,
+      "y": 304,
+      "width": 51.36,
+      "height": 12
+    },
+    {
+      "index": 50,
+      "x": 192.29,
+      "y": 304,
+      "width": 33.02,
+      "height": 12
+    },
+    {
+      "index": 51,
+      "x": 228.37,
+      "y": 304,
+      "width": 12.23,
+      "height": 12
+    },
+    {
+      "index": 52,
+      "x": 243.66,
+      "y": 304,
+      "width": 40.96,
+      "height": 12
+    },
+    {
+      "index": 53,
+      "x": 287.68,
+      "y": 304,
+      "width": 31.79,
+      "height": 12
+    },
+    {
+      "index": 54,
+      "x": 322.53,
+      "y": 304,
+      "width": 29.35,
+      "height": 12
+    },
+    {
+      "index": 55,
+      "x": 354.93,
+      "y": 304,
+      "width": 60.52,
+      "height": 12
+    },
+    {
+      "index": 56,
+      "x": 418.51,
+      "y": 304,
+      "width": 44.01,
+      "height": 12
+    },
+    {
+      "index": 57,
+      "x": 465.58,
+      "y": 304,
+      "width": 15.9,
+      "height": 12
+    },
+    {
+      "index": 58,
+      "x": 484.54,
+      "y": 304,
+      "width": 39.13,
+      "height": 12
+    },
+    {
+      "index": 59,
+      "x": 526.72,
+      "y": 304,
+      "width": 11.62,
+      "height": 12
+    },
+    {
+      "index": 60,
+      "x": 48,
+      "y": 322,
+      "width": 6.12,
+      "height": 12
+    },
+    {
+      "index": 61,
+      "x": 57.17,
+      "y": 322,
+      "width": 42.8,
+      "height": 12
+    },
+    {
+      "index": 62,
+      "x": 103.03,
+      "y": 322,
+      "width": 58.08,
+      "height": 12
+    },
+    {
+      "index": 63,
+      "x": 164.17,
+      "y": 322,
+      "width": 31.17,
+      "height": 12
+    },
+    {
+      "index": 64,
+      "x": 198.4,
+      "y": 322,
+      "width": 37.91,
+      "height": 12
+    },
+    {
+      "index": 65,
+      "x": 239.37,
+      "y": 322,
+      "width": 36.69,
+      "height": 12
+    },
+    {
+      "index": 66,
+      "x": 279.11,
+      "y": 322,
+      "width": 31.18,
+      "height": 12
+    },
+    {
+      "index": 67,
+      "x": 313.35,
+      "y": 322,
+      "width": 40.96,
+      "height": 12
+    },
+    {
+      "index": 68,
+      "x": 357.38,
+      "y": 322,
+      "width": 6.12,
+      "height": 12
+    },
+    {
+      "index": 69,
+      "x": 366.55,
+      "y": 322,
+      "width": 33.63,
+      "height": 12
+    },
+    {
+      "index": 70,
+      "x": 403.23,
+      "y": 322,
+      "width": 41.58,
+      "height": 12
+    },
+    {
+      "index": 71,
+      "x": 447.87,
+      "y": 322,
+      "width": 43.41,
+      "height": 12
+    },
+    {
+      "index": 72,
+      "x": 48,
+      "y": 340,
+      "width": 53.17,
+      "height": 12
+    },
+    {
+      "index": 73,
+      "x": 104.23,
+      "y": 340,
+      "width": 29.35,
+      "height": 12
+    },
+    {
+      "index": 75,
+      "x": 48,
+      "y": 384,
+      "width": 54.47,
+      "height": 15
+    },
+    {
+      "index": 76,
+      "x": 48,
+      "y": 414,
+      "width": 44.64,
+      "height": 12
+    },
+    {
+      "index": 77,
+      "x": 95.7,
+      "y": 414,
+      "width": 37.9,
+      "height": 12
+    },
+    {
+      "index": 78,
+      "x": 136.65,
+      "y": 414,
+      "width": 26.29,
+      "height": 12
+    },
+    {
+      "index": 79,
+      "x": 166.0,
+      "y": 414,
+      "width": 6.12,
+      "height": 12
+    },
+    {
+      "index": 80,
+      "x": 175.17,
+      "y": 414,
+      "width": 9.17,
+      "height": 12
+    },
+    {
+      "index": 81,
+      "x": 187.4,
+      "y": 414,
+      "width": 6.12,
+      "height": 12
+    },
+    {
+      "index": 82,
+      "x": 196.58,
+      "y": 414,
+      "width": 43.41,
+      "height": 12
+    },
+    {
+      "index": 83,
+      "x": 243.04,
+      "y": 414,
+      "width": 26.29,
+      "height": 12
+    },
+    {
+      "index": 84,
+      "x": 272.39,
+      "y": 414,
+      "width": 39.73,
+      "height": 12
+    },
+    {
+      "index": 85,
+      "x": 315.18,
+      "y": 414,
+      "width": 37.9,
+      "height": 12
+    },
+    {
+      "index": 86,
+      "x": 356.13,
+      "y": 414,
+      "width": 26.29,
+      "height": 12
+    },
+    {
+      "index": 87,
+      "x": 385.48,
+      "y": 414,
+      "width": 6.12,
+      "height": 12
+    },
+    {
+      "index": 88,
+      "x": 394.65,
+      "y": 414,
+      "width": 9.17,
+      "height": 12
+    },
+    {
+      "index": 89,
+      "x": 406.89,
+      "y": 414,
+      "width": 6.12,
+      "height": 12
+    },
+    {
+      "index": 90,
+      "x": 416.06,
+      "y": 414,
+      "width": 43.41,
+      "height": 12
+    },
+    {
+      "index": 91,
+      "x": 462.52,
+      "y": 414,
+      "width": 26.29,
+      "height": 12
+    },
+    {
+      "index": 92,
+      "x": 491.87,
+      "y": 414,
+      "width": 39.72,
+      "height": 12
+    },
+    {
+      "index": 93,
+      "x": 48,
+      "y": 432,
+      "width": 47.07,
+      "height": 12
+    },
+    {
+      "index": 94,
+      "x": 98.13,
+      "y": 432,
+      "width": 21.39,
+      "height": 12
+    },
+    {
+      "index": 95,
+      "x": 122.58,
+      "y": 432,
+      "width": 22.01,
+      "height": 12
+    },
+    {
+      "index": 96,
+      "x": 147.65,
+      "y": 432,
+      "width": 44.02,
+      "height": 12
+    },
+    {
+      "index": 97,
+      "x": 194.73,
+      "y": 432,
+      "width": 15.29,
+      "height": 12
+    },
+    {
+      "index": 98,
+      "x": 213.08,
+      "y": 432,
+      "width": 26.29,
+      "height": 12
+    },
+    {
+      "index": 99,
+      "x": 242.43,
+      "y": 432,
+      "width": 12.23,
+      "height": 12
+    },
+    {
+      "index": 100,
+      "x": 257.72,
+      "y": 432,
+      "width": 25.67,
+      "height": 12
+    },
+    {
+      "index": 101,
+      "x": 286.45,
+      "y": 432,
+      "width": 7.94,
+      "height": 12
+    },
+    {
+      "index": 102,
+      "x": 297.45,
+      "y": 432,
+      "width": 35.46,
+      "height": 12
+    },
+    {
+      "index": 103,
+      "x": 335.97,
+      "y": 432,
+      "width": 7.34,
+      "height": 12
+    },
+    {
+      "index": 104,
+      "x": 346.36,
+      "y": 432,
+      "width": 38.51,
+      "height": 12
+    },
+    {
+      "index": 105,
+      "x": 387.93,
+      "y": 432,
+      "width": 26.28,
+      "height": 12
+    },
+    {
+      "index": 106,
+      "x": 417.27,
+      "y": 432,
+      "width": 7.94,
+      "height": 12
+    },
+    {
+      "index": 107,
+      "x": 428.27,
+      "y": 432,
+      "width": 20.79,
+      "height": 12
+    },
+    {
+      "index": 108,
+      "x": 452.12,
+      "y": 432,
+      "width": 26.29,
+      "height": 12
+    },
+    {
+      "index": 109,
+      "x": 481.47,
+      "y": 432,
+      "width": 15.29,
+      "height": 12
+    },
+    {
+      "index": 110,
+      "x": 48,
+      "y": 450,
+      "width": 41.58,
+      "height": 12
+    },
+    {
+      "index": 111,
+      "x": 92.64,
+      "y": 450,
+      "width": 31.79,
+      "height": 12
+    },
+    {
+      "index": 112,
+      "x": 127.49,
+      "y": 450,
+      "width": 15.29,
+      "height": 12
+    },
+    {
+      "index": 113,
+      "x": 145.83,
+      "y": 450,
+      "width": 56.86,
+      "height": 12
+    },
+    {
+      "index": 115,
+      "x": 48,
+      "y": 494,
+      "width": 60.68,
+      "height": 15
+    },
+    {
+      "index": 116,
+      "x": 48,
+      "y": 524,
+      "width": 18.95,
+      "height": 12
+    },
+    {
+      "index": 117,
+      "x": 70.01,
+      "y": 524,
+      "width": 21.38,
+      "height": 12
+    },
+    {
+      "index": 118,
+      "x": 94.45,
+      "y": 524,
+      "width": 18.35,
+      "height": 12
+    },
+    {
+      "index": 119,
+      "x": 115.86,
+      "y": 524,
+      "width": 18.35,
+      "height": 12
+    },
+    {
+      "index": 120,
+      "x": 137.27,
+      "y": 524,
+      "width": 21.38,
+      "height": 12
+    },
+    {
+      "index": 121,
+      "x": 161.71,
+      "y": 524,
+      "width": 18.35,
+      "height": 12
+    },
+    {
+      "index": 122,
+      "x": 183.11,
+      "y": 524,
+      "width": 23.85,
+      "height": 12
+    },
+    {
+      "index": 123,
+      "x": 210.02,
+      "y": 524,
+      "width": 6.12,
+      "height": 12
+    },
+    {
+      "index": 124,
+      "x": 219.19,
+      "y": 524,
+      "width": 42.17,
+      "height": 12
+    },
+    {
+      "index": 125,
+      "x": 264.43,
+      "y": 524,
+      "width": 31.78,
+      "height": 12
+    },
+    {
+      "index": 126,
+      "x": 299.26,
+      "y": 524,
+      "width": 42.17,
+      "height": 12
+    },
+    {
+      "index": 127,
+      "x": 344.49,
+      "y": 524,
+      "width": 35.46,
+      "height": 12
+    },
+    {
+      "index": 128,
+      "x": 383.02,
+      "y": 524,
+      "width": 69.7,
+      "height": 12
+    },
+    {
+      "index": 129,
+      "x": 455.77,
+      "y": 524,
+      "width": 38.52,
+      "height": 12
+    },
+    {
+      "index": 130,
+      "x": 497.35,
+      "y": 524,
+      "width": 26.29,
+      "height": 12
+    },
+    {
+      "index": 131,
+      "x": 526.7,
+      "y": 524,
+      "width": 9.17,
+      "height": 12
+    },
+    {
+      "index": 132,
+      "x": 48,
+      "y": 542,
+      "width": 45.24,
+      "height": 12
+    },
+    {
+      "index": 133,
+      "x": 96.3,
+      "y": 542,
+      "width": 7.94,
+      "height": 12
+    },
+    {
+      "index": 134,
+      "x": 107.3,
+      "y": 542,
+      "width": 43.41,
+      "height": 12
+    },
+    {
+      "index": 135,
+      "x": 153.76,
+      "y": 542,
+      "width": 50.74,
+      "height": 12
+    },
+    {
+      "index": 136,
+      "x": 207.57,
+      "y": 542,
+      "width": 42.8,
+      "height": 12
+    },
+    {
+      "index": 137,
+      "x": 253.42,
+      "y": 542,
+      "width": 26.89,
+      "height": 12
+    },
+    {
+      "index": 138,
+      "x": 283.38,
+      "y": 542,
+      "width": 50.72,
+      "height": 12
+    },
+    {
+      "index": 139,
+      "x": 337.16,
+      "y": 542,
+      "width": 18.35,
+      "height": 12
+    },
+    {
+      "index": 140,
+      "x": 358.56,
+      "y": 542,
+      "width": 39.73,
+      "height": 12
+    },
+    {
+      "index": 141,
+      "x": 401.35,
+      "y": 542,
+      "width": 23.84,
+      "height": 12
+    },
+    {
+      "index": 142,
+      "x": 428.25,
+      "y": 542,
+      "width": 15.9,
+      "height": 12
+    },
+    {
+      "index": 143,
+      "x": 447.2,
+      "y": 542,
+      "width": 47.08,
+      "height": 12
+    },
+    {
+      "index": 144,
+      "x": 48,
+      "y": 560,
+      "width": 64.8,
+      "height": 12
+    },
+    {
+      "index": 145,
+      "x": 115.86,
+      "y": 560,
+      "width": 24.45,
+      "height": 12
+    },
+    {
+      "index": 146,
+      "x": 143.37,
+      "y": 560,
+      "width": 27.51,
+      "height": 12
+    },
+    {
+      "index": 147,
+      "x": 173.94,
+      "y": 560,
+      "width": 15.29,
+      "height": 12
+    },
+    {
+      "index": 148,
+      "x": 192.29,
+      "y": 560,
+      "width": 35.45,
+      "height": 12
+    },
+    {
+      "index": 149,
+      "x": 230.8,
+      "y": 560,
+      "width": 42.17,
+      "height": 12
+    },
+    {
+      "index": 150,
+      "x": 276.03,
+      "y": 560,
+      "width": 18.35,
+      "height": 12
+    },
+    {
+      "index": 151,
+      "x": 297.44,
+      "y": 560,
+      "width": 24.46,
+      "height": 12
+    }
+  ]
+}

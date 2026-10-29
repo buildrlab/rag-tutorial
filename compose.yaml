@@ -1,0 +1,24 @@
+name: rag-field-guide
+services:
+  app:
+    build: .
+    ports:
+      - "127.0.0.1:${RAG_PORT:-8000}:8000"
+    environment:
+      QDRANT_URL: http://qdrant:6333
+      RAG_PROVIDER: ${RAG_PROVIDER:-offline}
+      OLLAMA_URL: http://ollama:11434
+      EMBEDDING_MODEL: ${EMBEDDING_MODEL:-}
+      GENERATION_MODEL: ${GENERATION_MODEL:-}
+      OPENAI_API_KEY: ${OPENAI_API_KEY:-}
+    depends_on:
+      qdrant:
+        condition: service_started
+    restart: unless-stopped
+  qdrant:
+    image: qdrant/qdrant:v1.15.5
+    volumes:
+      - vectors:/qdrant/storage
+    restart: unless-stopped
+volumes:
+  vectors:
