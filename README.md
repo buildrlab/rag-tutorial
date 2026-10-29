@@ -7,7 +7,13 @@ A visual tutorial and runnable RAG starter by BuildrLab. Learn the pipeline by i
 ## Quickstart
 
 1. Install and start Docker Desktop (macOS/Windows) or Docker Engine + Compose v2 (Linux).
-2. Unzip this repository. Open a terminal **inside the folder containing `compose.yaml`**.
+2. Clone the repository (or download and unzip it), then open a terminal **inside the folder containing `compose.yaml`**:
+
+```sh
+git clone https://github.com/buildrlab/rag-tutorial.git
+cd rag-tutorial
+```
+
 3. Run:
 
 ```sh
@@ -15,6 +21,8 @@ docker compose up --build
 ```
 
 4. Open **http://localhost:8000**. Start with the lesson, then try the retrieval workbench.
+
+Open the server URL, not `web/index.html` directly. The guide uses JavaScript modules and local API endpoints that need the running server.
 
 The first build needs internet access to download images, Python dependencies and OCR packages. After that, the offline lab makes no inference API calls. The same command works in macOS/Linux shells and Windows PowerShell. Paths with spaces are fine when you open the terminal in the project folder. On Windows use Docker Desktop's Linux containers.
 
