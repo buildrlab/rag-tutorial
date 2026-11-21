@@ -27,11 +27,17 @@ app = FastAPI(title="RAG Field Guide API", version="0.1.0", description="Local t
 async def protect_local_lab(request: Request, call_next):
     # Prevent cross-origin browser writes to a local unauthenticated teaching server.
     origin = request.headers.get("origin")
-    if request.method == "POST" and origin and origin != str(request.base_url).rstrip("/"):
+    extra = {o.strip().rstrip("/") for o in os.getenv("RAG_ALLOWED_ORIGINS", "").split(",") if o.strip()}
+    if request.method == "POST" and origin and origin != str(request.base_url).rstrip("/") and origin.rstrip("/") not in extra:
         return JSONResponse({"detail": "Cross-origin requests are not allowed."}, status_code=403)
     size = request.headers.get("content-length")
-    if size and int(size) > 3 * 1024 * 1024 + 16_384:
-        return JSONResponse({"detail": "Request exceeds the 3 MB lab limit."}, status_code=413)
+    if size:
+        try:
+            too_big = int(size) > 3 * 1024 * 1024 + 16_384
+        except ValueError:
+            return JSONResponse({"detail": "Invalid Content-Length header."}, status_code=400)
+        if too_big:
+            return JSONResponse({"detail": "Request exceeds the 3 MB lab limit."}, status_code=413)
     response = await call_next(request)
     response.headers["X-Content-Type-Options"] = "nosniff"
     response.headers["Referrer-Policy"] = "no-referrer"
