@@ -16,5 +16,13 @@ rows = []
 for case in json.loads((root / "data/evaluation.json").read_text()):
     hits = bench.retrieve(case["question"], method=args.method)["evidence"]
     ids = list(dict.fromkeys(c["document_id"] for c in hits))
-    rows.append({**case, "retrieved": ids, "hit": case["expected"] in ids if case["expected"] else None})
-print(json.dumps({"provider": bench.provider.kind, "embedding_model": bench.provider.embedding_model, "method": args.method, "rows": rows}, indent=2))
+    rank = ids.index(case["expected"]) + 1 if case["expected"] in ids else None
+    rows.append({**case, "retrieved": ids, "hit": bool(rank) if case["expected"] else None,
+                 "reciprocal_rank": 1 / rank if rank else 0, "empty_result": not ids})
+summary = {}
+for split in sorted({r.get("split", "all") for r in rows}):
+    answerable = [r for r in rows if r.get("split", "all") == split and r["expected"]]
+    if answerable:
+        summary[split] = {"cases": len(answerable), "hit_at_k": sum(r["hit"] for r in answerable) / len(answerable),
+                          "mrr": sum(r["reciprocal_rank"] for r in answerable) / len(answerable)}
+print(json.dumps({"provider": bench.provider.kind, "embedding_model": bench.provider.embedding_model, "method": args.method, "summary": summary, "rows": rows}, indent=2))

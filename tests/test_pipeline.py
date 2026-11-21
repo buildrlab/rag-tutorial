@@ -70,6 +70,19 @@ def test_new_chunk_configuration_gets_separate_index(bench):
     assert bench.db.collection_exists(a) and bench.db.collection_exists(b)
 
 
+def test_index_cache_is_capped_and_evicts_least_recently_used(monkeypatch):
+    monkeypatch.delenv("QDRANT_URL", raising=False)
+    monkeypatch.setenv("RAG_PROVIDER", "offline")
+    small = Workbench(json.loads((ROOT / "data/documents.json").read_text()), max_indexes=2)
+    first, _ = small.build("fixed", 40, 5)
+    second, _ = small.build("fixed", 50, 5)
+    small.build("fixed", 40, 5)  # touch the first so the second is now least recently used
+    third, _ = small.build("fixed", 60, 5)
+    assert list(small.indexes) == [first, third]
+    assert not small.db.collection_exists(second)
+    assert small.db.collection_exists(first) and small.db.collection_exists(third)
+
+
 def test_hash_is_deterministic_but_not_semantic():
     assert teaching_vector("battery warranty") == teaching_vector("warranty battery")
     assert teaching_vector("refund") != teaching_vector("money back")
@@ -148,3 +161,23 @@ def test_provider_rejects_mismatched_dimensions(monkeypatch):
     monkeypatch.setattr(p, "request", lambda *a, **k: {"embeddings": [[1., 0.], [1.]]})
     with pytest.raises(ProviderError):
         p.embed(["one", "two"])
+
+
+def test_bad_content_length_is_a_400_not_a_500(monkeypatch):
+    monkeypatch.delenv("QDRANT_URL", raising=False)
+    from app.main import app
+    client = TestClient(app)
+    assert client.get("/api/health", headers={"Content-Length": "not-a-number"}).status_code == 400
+    assert client.get("/api/health", headers={"Content-Length": str(10 * 1024 * 1024)}).status_code == 413
+
+
+def test_extra_origin_can_be_allowed_for_reverse_proxies(monkeypatch):
+    monkeypatch.delenv("QDRANT_URL", raising=False)
+    from app.main import app
+    client = TestClient(app)
+    body = {"question": "How long do I have to return unopened equipment?"}
+    proxied = {"Origin": "https://lab.example.com"}
+    assert client.post("/api/query", json=body, headers=proxied).status_code == 403
+    monkeypatch.setenv("RAG_ALLOWED_ORIGINS", "https://lab.example.com/, https://other.example")
+    assert client.post("/api/query", json=body, headers=proxied).status_code == 200
+    assert client.post("/api/query", json=body, headers={"Origin": "https://evil.example"}).status_code == 403

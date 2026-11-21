@@ -4,7 +4,7 @@ import json
 import math
 import os
 import threading
-from collections import Counter
+from collections import Counter, OrderedDict
 
 from qdrant_client import QdrantClient, models
 
@@ -46,13 +46,16 @@ def pack_context(chunks, budget):
 
 
 class Workbench:
-    def __init__(self, documents, path=":memory:", provider=None):
+    def __init__(self, documents, path=":memory:", provider=None, max_indexes=None):
         self.documents = documents
         self.provider = provider or Provider()
         self.lock = threading.RLock()
         url = os.getenv("QDRANT_URL")
         self.db = QdrantClient(url=url, timeout=30) if url else QdrantClient(location=":memory:") if path == ":memory:" else QdrantClient(path=path)
-        self.indexes = {}
+        # Each distinct (strategy, size, overlap) builds a collection and, with a hosted provider, re-embeds
+        # every document. Cap the cache and drop the least recently used collection so cost and storage stay bounded.
+        self.max_indexes = max(1, max_indexes or int(os.getenv("RAG_MAX_INDEXES", "8")))
+        self.indexes = OrderedDict()
 
     def build(self, strategy, size, overlap):
         with self.lock:
@@ -60,6 +63,7 @@ class Workbench:
             fingerprint = hashlib.sha256(json.dumps(contract, sort_keys=True).encode()).hexdigest()[:20]
             name = "rag_" + fingerprint
             if name in self.indexes:
+                self.indexes.move_to_end(name)
                 return name, self.indexes[name]
             chunks = chunk_documents(self.documents, strategy, size, overlap)
             if not self.db.collection_exists(name):
@@ -74,6 +78,9 @@ class Workbench:
                 self.db.delete_collection(name)
                 return self.build(strategy, size, overlap)
             self.indexes[name] = chunks
+            while len(self.indexes) > self.max_indexes:
+                oldest, _ = self.indexes.popitem(last=False)
+                self.db.delete_collection(oldest)
             return name, chunks
 
     def retrieve(self, question, strategy="sections", size=100, overlap=15, method="hybrid", top_k=3, scope="public", budget=500):
