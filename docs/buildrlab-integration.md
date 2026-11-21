@@ -10,7 +10,7 @@ Make `/learn/rag` a useful, public technical resource that demonstrates Damien's
 2. Replace root-relative asset/API paths with a configurable base path or native routes. The current starter intentionally runs at `/`; copying it under a subdirectory without path changes will break links.
 3. Keep the educational interactions available without signup. The vector toy and migration simulation run in the browser. Chunking can be ported to a shared browser implementation with parity tests.
 4. Host actual inference behind a separate authenticated/rate-limited service, or keep it local-only and provide recorded, clearly labelled traces on the public site. Never expose this starter's unauthenticated API as a production endpoint.
-5. Publish a versioned GitHub repository and ZIP download; link each code sample to the matching release. The repository is public at https://github.com/buildrlab/rag-tutorial and is linked from the BuildrLab `/tutorials/rag` page; tag a release for each versioned ZIP.
+5. Publish a versioned GitHub repository and ZIP download; link each code sample to the matching release. The repository is public at https://github.com/buildrlab/rag-tutorial; link it from the BuildrLab RAG tutorial page and tag a release for each versioned ZIP.
 6. Add a three-minute walkthrough and an honest case study: problem, architecture, evaluation methodology, measured failures, trade-offs and next steps.
 7. End the guide with a focused AI discovery consultation link. Keep the learning experience useful in its own right.
 
